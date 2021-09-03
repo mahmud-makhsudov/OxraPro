@@ -59,9 +59,9 @@
         </div>
       </div>
         </b-tab>
-        <b-tab title="Список сотрудников"><p>I'm the second tab</p></b-tab>
-        <b-tab title="Сделки"><p>I'm a disabled tab!</p></b-tab>
-        <b-tab title="Статистика"><p>I'm a disabled tab!</p></b-tab>
+        <b-tab title="Список сотрудников"><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias deleniti eos autem adipisci illum, repellat, ullam magni minus ipsum quae consequatur enim perspiciatis quidem consectetur fugit veritatis, debitis labore sapiente.</p></b-tab>
+        <b-tab title="Сделки"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem tempore ex facilis aperiam placeat, sint minus iusto ipsa ut vel magnam, fugiat laudantium architecto? Ratione perferendis a enim incidunt!</p></b-tab>
+        <b-tab title="Статистика"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium voluptatem tempore ex facilis aperiam placeat, sint minus iusto ipsa ut vel magnam, fugiat laudantium architecto? Ratione perferendis a enim incidunt!</p></b-tab>
       </b-tabs>
 
     </div>
