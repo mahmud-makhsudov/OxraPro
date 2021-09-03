@@ -10,16 +10,16 @@
 .wrap {
   position: relative;
   background-color: #F3F6FA;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
-  margin-left: 64px;
   font-size: 14px;
   line-height: 16px;
   flex-direction: column;
-  left: $sidebar-width-open - $sidebar-width-closed;
-  right: 0;
-  transition: left $sidebar-transition-time ease-in-out, margin-left $sidebar-transition-time ease-in-out;
-
+  margin-left: 0 !important;
+  width: 100% !important;
+  left: auto !important;
+  transition: all .3s;
+  
   @media (max-width: breakpoint-max(sm)) {
     margin-left: 0;
     left: $sidebar-width-open;
@@ -84,13 +84,6 @@ form.form-inline {
   position: relative;
 }
 
-.wrap {
-  margin-left: 0 !important;
-  width: 100% !important;
-  left: auto !important;
-  transition: all .3s;
-}
-
 .sidebar {
   position: absolute;
   width: 0;
@@ -98,7 +91,7 @@ form.form-inline {
   transition: all .3s;
   background-color: #252723;
   overflow: hidden;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .sidebarStatic .wrap {
