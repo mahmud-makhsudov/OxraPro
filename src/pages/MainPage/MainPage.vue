@@ -57,6 +57,10 @@
         </div>
         <button class="dates__btn"><img src="@/assets/right.png" alt="<"></button>
       </div>
+
+    <b-table responsive :items="items"></b-table>
+
+
     </div>
 </template>
 

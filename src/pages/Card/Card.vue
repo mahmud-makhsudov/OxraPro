@@ -6,13 +6,9 @@
     </ul>
     <h5 class="title">Карточка компании</h5>
     <div class="tabs">
-      <div class="tabs__header">
-        <div class="tabs__header-item active">Детальная информация</div>
-        <div class="tabs__header-item">Список сотрудников</div>
-        <div class="tabs__header-item">Сделки</div>
-        <div class="tabs__header-item">Статистика</div>
-      </div>
-      <div class="tabs__content">
+      <b-tabs>
+        <b-tab title="Детальная информация" active>
+          <div class="tabs__content">
         <div class="list">
           <div class="line">
             <div class="line__label">Название компании</div>
@@ -62,6 +58,12 @@
           </div>
         </div>
       </div>
+        </b-tab>
+        <b-tab title="Список сотрудников"><p>I'm the second tab</p></b-tab>
+        <b-tab title="Сделки"><p>I'm a disabled tab!</p></b-tab>
+        <b-tab title="Статистика"><p>I'm a disabled tab!</p></b-tab>
+      </b-tabs>
+
     </div>
 
   <b-modal id="modal-scoped" size="lg">

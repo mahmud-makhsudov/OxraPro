@@ -60,11 +60,85 @@
   color: $text-muted;
 }
 
-
-
 .title {
   font-size: 30px;
   line-height: 35px;
   color: #000000;
   margin-bottom: 24px;
+}
+
+.nav-item.d-md-down-none {
+  display: none;
+}
+
+#v-step-1 {
+  display: block;
+}
+
+form.form-inline {
+  margin-left: 25px !important;
+}
+
+.layout {
+  min-width: 100%;
+  position: relative;
+}
+
+.wrap {
+  margin-left: 0 !important;
+  width: 100% !important;
+  left: auto !important;
+  transition: all .3s;
+}
+
+.sidebar {
+  position: absolute;
+  width: 0;
+  left: 0;
+  transition: all .3s;
+  background-color: #252723;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.sidebarStatic .wrap {
+  width: calc(100% - 224px) !important;
+  right: -224px !important;
+}
+
+.sidebarStatic .sidebar {
+  width: 224px;
+}
+
+.sidebar__top {
+  padding: 11px 25px;
+  background: #000000;
+}
+
+.sidebar__content {
+  padding: 35px 25px;
+}
+
+.sidebar__content-line {
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding-left: 25px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    width: 15px;
+    height: 12px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assets/my-comp-icon.svg");
+  }
+
+  &+& {
+    margin-top: 15px;
+  }
 }

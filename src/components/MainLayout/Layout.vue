@@ -8,19 +8,36 @@
       'navbar-' + navbarColorName,
     ]"
   >
-    <Sidebar />
-    <div class="wrap">
-      <Header />
-      <v-touch
-        @swipe="handleSwipe"
-        :swipe-options="{ direction: 'horizontal' }"
-      >
-        <transition name="router-animation">
-          <div class="layout">
-            <router-view />
-          </div>
-        </transition>
-      </v-touch>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar__top">
+          <a href="#" class="sidebar__top-link">
+            <img
+              src="../../assets/new-logo.svg"
+              alt="logo"
+              class="sidebar__logo"
+            />
+          </a>
+        </div>
+        <div class="sidebar__content">
+          <router-link to="/main/companies">
+            <div class="sidebar__content-line">Мои компании</div>
+          </router-link>
+        </div>
+      </aside>
+      <div class="wrap">
+        <Header />
+        <v-touch
+          @swipe="handleSwipe"
+          :swipe-options="{ direction: 'horizontal' }"
+        >
+          <transition name="router-animation">
+            <div class="layout">
+              <router-view />
+            </div>
+          </transition>
+        </v-touch>
+      </div>
     </div>
     <v-tour name="app-tour" :steps="steps" :options="tourOptions">
       <template slot-scope="tour">
