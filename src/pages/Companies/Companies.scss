@@ -1,0 +1,160 @@
+.companies {
+  padding: 32px 31px;
+}
+
+.companies-top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+  max-width: 1150px;
+}
+
+.companies-top__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 35px;
+  color: #333333;
+}
+
+.companies-top__filter-text {
+  color: #575E66;
+  margin-bottom: 5px;
+}
+
+.select {
+  position: relative;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #575E66 !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 16px;
+    background-color: #fff;
+    height: 16px;
+    background-image: url("../../assets/icons/arrow-down-second.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.companies__table {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px 10px rgba(207, 216, 228, 0.3);
+  border-radius: 6px;
+  max-width: 1150px;
+}
+
+.cell {
+  padding: 14px 12px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+
+  input {
+    width: 100%;
+    background: #FFFFFF;
+    border: 1px solid #C3CCD2;
+    border-radius: 6px;
+    padding: 9px 11px;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      color: #575E66;
+    }
+  }
+}
+
+.cell-1 {
+  width: 420px;
+}
+
+.cell-2 {
+  width: 200px;
+}
+
+.cell-3 {
+  width: 160px;
+}
+
+.cell-4 {
+  width: 180px;
+}
+
+.cell-5 {
+  width: 190px;
+}
+
+.companies__table-titles {
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #333333;
+
+  .cell {
+    padding-bottom: 0;
+    margin-bottom: 9px;
+    height: fit-content;
+  }
+
+  .cell-1 {
+    justify-content: space-between;
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.companies__table-inputs .cell {
+  padding-top: 0;
+}
+
+.companies__table-content {
+  a {
+    text-decoration: underline;
+  }
+
+  tr {
+    border-top: 1px solid #D8DFE5;
+    transition: all .3s;
+    cursor: pointer;
+
+    &:nth-child(odd) {
+      background-color: #F8F9FA;
+    }
+
+    &:hover {
+      background: #C5DAEF !important;
+    }
+  }
+
+  td {
+    border-left: 1px solid #D8DFE5;
+
+    &:last-child {
+      border-right: 1px solid #D8DFE5;
+    }
+  }
+}
+
+.pagination {
+  margin-top: 12px;
+
+  .page-link {
+    background-color: transparent !important;
+    padding: 0 3px !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #575E66 !important;
+  }
+  .active .page-link {
+    color: #235690 !important;
+  }
+}
