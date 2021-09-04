@@ -1,3 +1,8 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
 .companies {
   padding: 32px 31px;
 }
@@ -26,6 +31,7 @@
   font-size: 14px !important;
   line-height: 16px !important;
   color: #575E66 !important;
+  cursor: pointer;
 
   &::after {
     content: "";

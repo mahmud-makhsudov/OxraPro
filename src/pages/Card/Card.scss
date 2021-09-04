@@ -1,3 +1,8 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 .card-page {
   padding: 32px;
 }
@@ -214,6 +219,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #3F3B38;
+
   span {
     opacity: 0.5;
   }
@@ -251,8 +257,283 @@
 .tab-pane {
   padding: 23px 18px 56px 18px !important;
 }
+
 .tabs {
   background-color: #fff !important;
   border-radius: 6px !important;
   overflow: hidden;
+}
+
+.deal__top {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.deal__top-item {
+
+  input,
+  select {
+    border: 1px solid #C3CCD2;
+    border-radius: 6px;
+    padding: 10px;
+    color: #575E66;
+    min-height: 43px;
+  }
+
+  label {
+    display: block;
+    width: 100%;
+    color: #575E66;
+  }
+
+  input::-webkit-calendar-picker-indicator {
+    background-image: url("../../assets/icons/date.svg");
+  }
+
+  input::placeholder {
+    color: #575E66;
+  }
+
+  &+& {
+    margin-left: 20px;
+  }
+}
+
+.date-picker__links {
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  text-decoration: underline;
+
+  a+a {
+    margin-left: 6px;
+  }
+}
+
+#num {
+  min-width: 188px;
+}
+
+#example-datepicker {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: -16px;
+    width: 8px;
+    height: 1px;
+    background-color: #575E66;
+  }
+}
+
+select.custom-select {
+  padding-right: 30px;
+  position: relative;
+  background: #fff url("../../assets/select.svg") right 1rem center/8px 10px no-repeat;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.deal__table {
+  background: #FFFFFF;
+  width: 1103px;
+  overflow-x: scroll;
+
+  a {
+    text-decoration: underline;
+  }
+
+  td {
+    padding: 14px 12px;
+  }
+
+  tr {
+    border-bottom: 1px solid #D8DFE5;
+    transition: all .3s;
+    cursor: pointer;
+    border-left: 1px solid #D8DFE5;
+    border-right: 1px solid #D8DFE5;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:nth-child(odd) {
+      background-color: #F8F9FA;
+    }
+
+    &:first-child {
+      border-top: 1px solid #D8DFE5;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: uppercase;
+      color: #333333;
+    }
+
+    &:hover {
+      background: #C5DAEF !important;
+    }
+  }
+}
+
+.id {
+  width: 64px;
+}
+
+.date-of-creation {
+  width: 140px;
+}
+
+.learning-stage {
+  width: 159px;
+}
+
+.company {
+  width: 158px;
+}
+
+.contract-no {
+  width: 123px;
+}
+
+.summ {
+  width: 127px;
+}
+
+.scanner {
+  width: 242px;
+}
+
+.pagination {
+  margin-top: 12px;
+
+  .page-link {
+    background-color: transparent !important;
+    padding: 0 3px !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    color: #575E66 !important;
+  }
+
+  .active .page-link {
+    color: #235690 !important;
+  }
+}
+
+.companies-top__filter-text {
+  color: #575E66;
+  margin-bottom: 5px;
+}
+
+.select {
+  position: relative;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #575E66 !important;
+  margin-left: 13px;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 12px;
+    width: 16px;
+    background-color: #fff;
+    height: 16px;
+    background-image: url("../../assets/icons/arrow-down-second.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.deal__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1103px;
+}
+
+.companies-top__filter {
+  display: flex;
+  align-items: center;
+}
+
+.tab__content {
+  .line__label {
+    flex-basis: 40%;
+  }
+
+  .line__value {
+    flex-basis: 60%;
+  }
+
+  li {
+    list-style: disc;
+    margin-left: 20px;
+
+    &+li {
+      margin-top: 11px;
+    }
+  }
+}
+
+.tab__title {
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+#__BVID__51 {
+  box-shadow: none;
+}
+
+.card-header {
+  background-color: rgba(#fff, 1) !important;
+}
+
+.card-body {
+  padding-top: 0 !important;
+}
+
+.nav-pills {
+  padding: 50px 0 0 !important;
+}
+
+.nav-pills .nav-link {
+  border-radius: 0 !important;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8296AB;
+  border-left: 2px solid #C5D0DC !important;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  font-weight: bold !important;
+  color: #21578E !important;
+  background-color: transparent !important;
+  border-left-color: #21578E !important;
+}
+
+.tabs__content {
+  position: relative;
+}
+
+.btn-exit {
+  position: absolute;
+  left: 20px;
+  top: 27px;
+  z-index: 10;
+  border: 1px solid #21578E;
+  color: #21578E;
+  border-radius: 3px;
+  padding: 3px 10px;
+  background-color: transparent;
+  transition: all .3s;
+  &:hover {
+    opacity: .5;
+  }
 }
